@@ -38,15 +38,19 @@ export function CustomCursor() {
         };
     }, [pathname]);
 
-    // Don't render cursor on mobile devices
-    if (typeof window !== "undefined" && window.innerWidth < 768) {
-        return null;
+    // Don't render cursor on mobile/tablet devices or touch-enabled devices
+    if (typeof window !== "undefined") {
+        const isTouchDevice = window.matchMedia("(pointer: coarse)").matches;
+        const isSmallScreen = window.innerWidth <= 1024;
+        if (isTouchDevice || isSmallScreen) {
+            return null;
+        }
     }
 
     return (
         <>
             <motion.div
-                className="fixed top-0 left-0 w-3 h-3 bg-white rounded-full pointer-events-none z-[100] mix-blend-difference"
+                className="fixed top-0 left-0 w-3 h-3 bg-white rounded-full pointer-events-none z-[100] mix-blend-difference hidden lg:block"
                 animate={{
                     x: mousePosition.x - 6,
                     y: mousePosition.y - 6,
@@ -56,7 +60,7 @@ export function CustomCursor() {
                 transition={{ type: "tween", ease: "backOut", duration: 0.15 }}
             />
             <motion.div
-                className="fixed top-0 left-0 w-10 h-10 border border-white/50 rounded-full pointer-events-none z-[99]"
+                className="fixed top-0 left-0 w-10 h-10 border border-white/50 rounded-full pointer-events-none z-[99] hidden lg:block"
                 animate={{
                     x: mousePosition.x - 20,
                     y: mousePosition.y - 20,
