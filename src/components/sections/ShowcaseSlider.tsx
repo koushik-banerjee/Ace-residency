@@ -4,7 +4,7 @@ import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 
 const SHOWCASE_IMAGES = [
-    "https://images.unsplash.com/photo-1600607687931-cecebd802404?q=80&w=2938&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1600607687644-c7171b42498f?q=80&w=2940&auto=format&fit=crop",
     "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=2874&auto=format&fit=crop",
     "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?q=80&w=2940&auto=format&fit=crop",
     "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=2940&auto=format&fit=crop",

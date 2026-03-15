@@ -119,28 +119,33 @@ export function FeaturedProperties() {
                             className="group cursor-pointer"
                         >
                             {/* Image Container */}
-                            <div className="relative aspect-[4/5] md:aspect-[3/4] overflow-hidden mb-6 bg-card border border-white/5">
+                            <div className="relative aspect-video overflow-hidden mb-6 bg-card border border-white/5">
                                 <motion.div
-                                    whileHover={{ scale: 1.05 }}
-                                    transition={{ duration: 1.2, ease: "easeOut" }}
+                                    whileHover={{ 
+                                        scale: 1.35,
+                                        rotate: 0.5,
+                                        filter: "brightness(1.1)"
+                                    }}
+                                    transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
                                     className="w-full h-full"
                                 >
                                     <img
                                         src={property.image}
                                         alt={property.title}
-                                        className="w-full h-full object-cover filter brightness-90 group-hover:brightness-100 transition-all duration-700"
+                                        className="w-full h-full object-cover filter brightness-90 transition-all duration-700"
                                     />
                                 </motion.div>
 
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-60" />
+                                {/* Dynamic Gradient Overlay */}
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-700" />
 
                                 {/* Overlay Info */}
-                                <div className="absolute top-6 left-6 flex space-x-3">
+                                <div className="absolute top-6 left-6 flex space-x-3 pointer-events-none">
                                     <span className="bg-background/80 backdrop-blur-md px-4 py-1.5 text-xs font-medium tracking-widest uppercase">For Sale</span>
                                 </div>
 
                                 <div className="absolute bottom-6 right-6">
-                                    <div className="w-12 h-12 rounded-full bg-white text-black flex items-center justify-center translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+                                    <div className="w-12 h-12 rounded-full bg-white text-black flex items-center justify-center translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-1000 ease-[0.22,1,0.36,1]">
                                         <ArrowUpRight size={20} />
                                     </div>
                                 </div>
