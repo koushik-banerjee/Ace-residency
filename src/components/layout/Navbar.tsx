@@ -42,7 +42,7 @@ export function Navbar() {
                 <div className="container mx-auto px-6 md:px-12 flex items-center justify-between">
                     <Link href="/" className="group relative">
                         <h1 className="font-playfair text-2xl tracking-widest text-white">
-                            ACE<span className="text-foreground">RESIDENCY</span>
+                            ACE <span className="text-foreground">RESIDENCY</span>
                         </h1>
                         <div className="absolute -bottom-1 left-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full" />
                     </Link>
