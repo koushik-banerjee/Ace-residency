@@ -13,7 +13,7 @@ const TESTIMONIALS = [
     },
     {
         id: 2,
-        quote: "Purchasing a property through Ace Residency was the most seamless luxury experience I've ever encountered. Their team anticipates needs you didn't even know you had.",
+        quote: "Purchasing a property through Baba Properties was the most seamless luxury experience I've ever encountered. Their team anticipates needs you didn't even know you had.",
         author: "Jameson Wright",
         role: "International Developer",
     },

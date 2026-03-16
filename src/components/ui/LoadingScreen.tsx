@@ -31,7 +31,7 @@ export function LoadingScreen() {
                             transition={{ duration: 0.8, ease: "easeOut" }}
                             className="text-white mb-6 font-playfair text-4xl tracking-widest relative"
                         >
-                            ACE RESIDENCY
+                            BABA PROPERTIES
                             <motion.div
                                 initial={{ width: 0 }}
                                 animate={{ width: "100%" }}

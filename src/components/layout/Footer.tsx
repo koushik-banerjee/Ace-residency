@@ -15,7 +15,7 @@ export function Footer() {
                     {/* Brand Info */}
                     <div className="col-span-1 lg:col-span-1">
                         <h2 className="font-playfair text-3xl tracking-widest text-white mb-6 relative inline-block">
-                            ACE<span className="text-foreground">RESIDENCY</span>
+                            BABA<span className="text-foreground">PROPERTIES</span>
                         </h2>
                         <p className="text-muted-foreground mb-8 text-sm leading-relaxed max-w-sm">
                             Curating extraordinary living spaces for those who demand the absolute best in modern luxury.
@@ -49,7 +49,7 @@ export function Footer() {
                         <h3 className="uppercase tracking-[0.2em] text-sm text-foreground mb-6 font-medium">Contact</h3>
                         <ul className="space-y-4 text-sm text-muted-foreground">
                             <li>100 Luxury Avenue<br />Beverly Hills, CA 90210</li>
-                            <li><a href="mailto:info@aceresidency.com" className="hover:text-white transition-colors">info@aceresidency.com</a></li>
+                            <li><a href="mailto:info@babaproperties.com" className="hover:text-white transition-colors">info@babaproperties.com</a></li>
                             <li><a href="tel:+18005550199" className="hover:text-white transition-colors">+1 (800) 555-0199</a></li>
                         </ul>
                     </div>
@@ -79,7 +79,7 @@ export function Footer() {
 
                 {/* Bottom Bar */}
                 <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center text-xs text-muted-foreground/60 tracking-wider">
-                    <p>&copy; {new Date().getFullYear()} ACE RESIDENCY. ALL RIGHTS RESERVED.</p>
+                    <p>&copy; {new Date().getFullYear()} BABA PROPERTIES. ALL RIGHTS RESERVED.</p>
                     <div className="flex space-x-6 mt-4 md:mt-0">
                         <Link href="#" className="hover:text-white transition-colors">PRIVACY POLICY</Link>
                         <Link href="#" className="hover:text-white transition-colors">TERMS OF SERVICE</Link>

@@ -21,7 +21,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Ace Residency | Extraordinary Living",
+  title: "Baba Properties | Extraordinary Living",
   description: "Luxury homes curated for modern lifestyles. Discover the most extraordinary real estate properties.",
 };
 
